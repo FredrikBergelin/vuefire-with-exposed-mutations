@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuexfire",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "description": "Firestore binding for Vuex",
   "main": "dist/vuexfire.common.js",
   "module": "dist/vuexfire.esm.js",
@@ -55,7 +55,7 @@
     "vuex": "^3.1.1"
   },
   "dependencies": {
-    "@fredrikbergelin/vuefire-core": "^2.3.4"
+    "@fredrikbergelin/vuefire-core": "^2.3.5"
   },
   "gitHead": "e3e2df3624572cec86ed861f2472df4d143f2265"
 }
