@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuexfire",
-  "version": "3.2.6",
+  "version": "3.2.5",
   "description": "Firestore binding for Vuex",
   "main": "dist/vuexfire.common.js",
   "module": "dist/vuexfire.esm.js",
