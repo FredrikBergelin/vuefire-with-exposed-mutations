@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.21](https://github.com/vuejs/vuefire/compare/@fredrikbergelin/vuexfire@3.2.14...@fredrikbergelin/vuexfire@3.2.21) (2021-08-04)
+
+**Note:** Version bump only for package @fredrikbergelin/vuexfire
+
+
+
+
+
 ## [3.2.14](https://github.com/vuejs/vuefire/compare/@fredrikbergelin/vuexfire@3.2.12...@fredrikbergelin/vuexfire@3.2.14) (2021-08-04)
 
 **Note:** Version bump only for package @fredrikbergelin/vuexfire
