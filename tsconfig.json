@@ -15,7 +15,7 @@
     "packages/global.d.ts",
     "packages/*/src",
     "packages/*/__tests__",
-    "packages/@posva/*/src",
-    "packages/@posva/*/__tests__"
+    "packages/@fredrikbergelin/vuefire-core/*/src",
+    "packages/@fredrikbergelin/vuefire-core/*/__tests__"
   ]
 }

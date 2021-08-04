@@ -9,7 +9,7 @@ assignees: ''
 
 ### Reproduction
 
-Use one of the examples at https://github.com/vuejs/vuefire/tree/master/packages/vuefire/examples to boil down and reproduce the problem. If no reproduction is provided and the information is not enough to reproduce the problem, we won't be able to give it a look
+Use one of the examples at https://github.com/vuejs/vuefire/tree/master/packages/@fredrikbergelin/vuefire/examples to boil down and reproduce the problem. If no reproduction is provided and the information is not enough to reproduce the problem, we won't be able to give it a look
 
 
 ### Steps to reproduce the behavior

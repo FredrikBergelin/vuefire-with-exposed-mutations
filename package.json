@@ -1,10 +1,9 @@
 {
   "private": true,
   "workspaces": [
-    "packages/vuefire",
-    "packages/vuexfire",
-    "packages/documentation",
-    "packages/@posva/*"
+    "packages/@fredrikbergelin/vuefire",
+    "packages/@fredrikbergelin/vuexfire",
+    "packages/@fredrikbergelin/vuefire-core"
   ],
   "config": {
     "commitizen": {

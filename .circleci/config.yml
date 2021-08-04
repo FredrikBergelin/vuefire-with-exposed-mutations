@@ -34,33 +34,33 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
-      - run: cd packages/@posva/vuefire-core && yarn test
+      - run: cd packages/@fredrikbergelin/vuefire-core && yarn test
       - persist_to_workspace:
           root: ~/project
           paths:
-            - packages/@posva/vuefire-core/coverage
+            - packages/@fredrikbergelin/vuefire-core/coverage
 
   vuefire:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/project
-      - run: cd packages/vuefire && yarn test
+      - run: cd packages/@fredrikbergelin/vuefire && yarn test
       - persist_to_workspace:
           root: ~/project
           paths:
-            - packages/vuefire/coverage
+            - packages/@fredrikbergelin/vuefire/coverage
 
   vuexfire:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/project
-      - run: cd packages/vuexfire && yarn test
+      - run: cd packages/@fredrikbergelin/vuexfire && yarn test
       - persist_to_workspace:
           root: ~/project
           paths:
-            - packages/vuexfire/coverage
+            - packages/@fredrikbergelin/vuexfire/coverage
 
   coverage:
     <<: *defaults
