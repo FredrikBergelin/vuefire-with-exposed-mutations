@@ -1,4 +1,9 @@
-import { VUEXFIRE_SET_VALUE, VUEXFIRE_ARRAY_ADD, VUEXFIRE_ARRAY_REMOVE } from './mutations-types'
+import {
+  VUEXFIRE_SET_VALUE,
+  VUEXFIRE_ARRAY_ADD,
+  VUEXFIRE_ARRAY_REMOVE,
+  VUEXFIRE_UPDATE,
+} from './mutations-types'
 import {
   bindCollection,
   bindDocument,
@@ -130,8 +135,10 @@ export function firestoreAction<S, R>(
         )
         return data
       },
-      add: (target, newIndex, data) =>
-        commit(VUEXFIRE_ARRAY_ADD, { target, newIndex, data }, commitOptions),
+      add: (target, newIndex, data, collectionKey) =>
+        commit(VUEXFIRE_ARRAY_ADD, { target, newIndex, data, collectionKey }, commitOptions),
+      update: (target, oldIndex, newIndex, data, collectionKey) =>
+        commit(VUEXFIRE_UPDATE, { target, oldIndex, newIndex, data, collectionKey }, commitOptions),
       remove: (target, oldIndex) => {
         const data = target[oldIndex]
         commit(VUEXFIRE_ARRAY_REMOVE, { target, oldIndex }, commitOptions)

@@ -1,4 +1,9 @@
-import { VUEXFIRE_SET_VALUE, VUEXFIRE_ARRAY_ADD, VUEXFIRE_ARRAY_REMOVE } from './mutations-types'
+import {
+  VUEXFIRE_SET_VALUE,
+  VUEXFIRE_ARRAY_ADD,
+  VUEXFIRE_ARRAY_REMOVE,
+  VUEXFIRE_UPDATE,
+} from './mutations-types'
 import {
   rtdbBindAsArray,
   rtdbBindAsObject,
@@ -108,6 +113,8 @@ export function firebaseAction<S, R>(
         commit(VUEXFIRE_ARRAY_REMOVE, { target, oldIndex }, commitOptions)
         return [data]
       },
+      update: (target, oldIndex, newIndex, data) =>
+        commit(VUEXFIRE_UPDATE, { target, oldIndex, newIndex, data }, commitOptions),
     }
 
     return action.call(

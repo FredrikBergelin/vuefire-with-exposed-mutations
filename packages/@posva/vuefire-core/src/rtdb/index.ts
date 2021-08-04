@@ -81,7 +81,7 @@ export function rtdbBindAsArray(
     'child_added',
     (snapshot, prevKey) => {
       const index = prevKey ? indexForKey(array, prevKey) + 1 : 0
-      ops.add(array, index, options.serialize(snapshot))
+      ops.add(array, index, options.serialize(snapshot), key)
     },
     reject
   )
@@ -108,7 +108,7 @@ export function rtdbBindAsArray(
       const index = indexForKey(array, snapshot.key)
       const oldRecord = ops.remove(array, index)[0]
       const newIndex = prevKey ? indexForKey(array, prevKey) + 1 : 0
-      ops.add(array, newIndex, oldRecord)
+      ops.add(array, newIndex, oldRecord, key)
     },
     reject
   )

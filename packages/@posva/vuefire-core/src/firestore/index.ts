@@ -183,7 +183,7 @@ export function bindCollection(
       arraySubs.splice(newIndex, 0, Object.create(null))
       const subs = arraySubs[newIndex]
       const [data, refs] = extractRefs(options.serialize(doc), undefined, subs)
-      ops.add(array, newIndex, data)
+      ops.add(array, newIndex, data, key)
       subscribeToRefs(options, array, newIndex, subs, refs, ops, 0, resolve.bind(null, doc))
     },
     modified: ({ oldIndex, newIndex, doc }: firebase.firestore.DocumentChange) => {
@@ -193,8 +193,7 @@ export function bindCollection(
       // only move things around after extracting refs
       // only move things around after extracting refs
       arraySubs.splice(newIndex, 0, subs)
-      ops.remove(array, oldIndex)
-      ops.add(array, newIndex, data)
+      ops.update(array, oldIndex, newIndex, data, key)
       subscribeToRefs(options, array, newIndex, subs, refs, ops, 0, resolve)
     },
     removed: ({ oldIndex }: firebase.firestore.DocumentChange) => {

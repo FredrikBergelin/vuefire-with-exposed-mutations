@@ -2,7 +2,19 @@ import firebase from 'firebase/app'
 
 export interface OperationsType {
   set: (target: Record<string, any>, key: string | number, value: any) => any
-  add: (array: any[], index: number, data: firebase.firestore.DocumentData) => any
+  add: (
+    array: any[],
+    index: number,
+    data: firebase.firestore.DocumentData,
+    collectionKey: string
+  ) => any
+  update: (
+    array: any[],
+    oldIndex: number,
+    index: number,
+    data: firebase.firestore.DocumentData,
+    collectionKey: string
+  ) => any
   remove: (array: any[], index: number) => any
 }
 
