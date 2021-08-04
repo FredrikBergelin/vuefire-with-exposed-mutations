@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuefire-core",
-  "version": "2.3.8",
+  "version": "2.3.9",
   "description": "Shared code for vue + Firebase apps used by vuefire and vuexfire",
   "author": "Fredrik Bergelin",
   "homepage": "https://github.com/vuejs/vuefire#readme",
