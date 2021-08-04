@@ -19,7 +19,7 @@
     "test": "yarn run build && yarn run test:unit",
     "test:unit": "jest",
     "dev": "yarn run test:unit --watchAll",
-    "build": "rollup -c ../../rollup.config.js",
+    "build": "rollup -c ../../../rollup.config.js",
     "postversion": "yarn run build"
   },
   "repository": {
