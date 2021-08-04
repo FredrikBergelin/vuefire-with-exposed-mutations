@@ -1,6 +1,8 @@
 <h1 align="center">Vuexfire + hijackable mutations</h1>
 
-Vuexfire can now be hijacked to inject custom models to the bound documents. In your store, add the mutations and customize them 
+Vuexfire can now be hijacked to inject custom models to the bound documents. In your store, add the mutations and customize them
+
+Warning: This is hastily put together for a side project. Published on npm: @fredrikbergelin/vuefire @fredrikbergelin/vuexfire
 
 Store:
 
@@ -13,34 +15,36 @@ const VUEXFIRE_ARRAY_ADD = 'vuexfire/ARRAY_ADD'
 const VUEXFIRE_ARRAY_REMOVE = 'vuexfire/ARRAY_REMOVE'
 const VUEXFIRE_UPDATE = 'vuexfire/UPDATE'
 
-Mutations: 
+Mutations:
 
 [VUEXFIRE_SET_VALUE](state, { path, target, data }) {
-  walkSet(target, path, data)
+walkSet(target, path, data)
 },
 
 [VUEXFIRE_ARRAY_ADD](state, { newIndex, data, target, collectionKey }) {
 
-  // Just an example, implement your own logic...
-  
-  if (collectionKey === 'posts') {
-    target.splice(newIndex, 0, new Post(data))
-  } else {
-    target.splice(newIndex, 0, data) // Original implementation, keep only this if you want a blank slate
-  }
+// Just an example, implement your own logic...
+
+if (collectionKey === 'posts') {
+target.splice(newIndex, 0, new Post(data))
+} else {
+target.splice(newIndex, 0, data) // Original implementation, keep only this if you want a blank slate
+}
 },
 
 [VUEXFIRE_UPDATE](
-  state,
-  { oldIndex, newIndex, data, target, collectionKey }
+state,
+{ oldIndex, newIndex, data, target, collectionKey }
 ) {
-  this.commit(VUEXFIRE_ARRAY_REMOVE, { oldIndex, target })
-  this.commit(VUEXFIRE_ARRAY_ADD, { newIndex, data, target, collectionKey })
+this.commit(VUEXFIRE_ARRAY_REMOVE, { oldIndex, target })
+this.commit(VUEXFIRE_ARRAY_ADD, { newIndex, data, target, collectionKey })
 },
 
 [VUEXFIRE_ARRAY_REMOVE](state, { oldIndex, target }) {
-  return target.splice(oldIndex, 1)[0]
+return target.splice(oldIndex, 1)[0]
 },
+
+// That's all
 
 <p align="center"><a href="https://vuefire.vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuefire.vuejs.org/vuefire-logo.svg" alt="VueFire logo"></a></p>
 
