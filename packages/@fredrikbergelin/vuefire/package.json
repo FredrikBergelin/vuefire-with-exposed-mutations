@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuefire",
-  "version": "2.3.13",
+  "version": "2.3.20",
   "description": "Firestore bindings for Vue.js",
   "main": "dist/vuefire.common.js",
   "module": "dist/vuefire.esm.js",
@@ -25,6 +25,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vuejs/vuefire.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "vue",
@@ -54,5 +57,5 @@
   "dependencies": {
     "@fredrikbergelin/vuefire-core": "^2.3.13"
   },
-  "gitHead": "a6ac85c3130c43bab11d1214d40431985e53f62f"
+  "gitHead": "2d7d600ef1e6c2ec8a6ac3d62316136627734a8c"
 }

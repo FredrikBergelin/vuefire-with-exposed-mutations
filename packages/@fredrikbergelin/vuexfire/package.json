@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuexfire",
-  "version": "3.2.14",
+  "version": "3.2.20",
   "description": "Firestore binding for Vuex",
   "main": "dist/vuexfire.common.js",
   "module": "dist/vuexfire.esm.js",
@@ -25,6 +25,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vuejs/vuefire.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "vuex",
@@ -57,5 +60,5 @@
   "dependencies": {
     "@fredrikbergelin/vuefire-core": "^2.3.13"
   },
-  "gitHead": "a6ac85c3130c43bab11d1214d40431985e53f62f"
+  "gitHead": "2d7d600ef1e6c2ec8a6ac3d62316136627734a8c"
 }

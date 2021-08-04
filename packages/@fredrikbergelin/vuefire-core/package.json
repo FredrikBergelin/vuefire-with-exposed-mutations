@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuefire-core",
-  "version": "2.3.13",
+  "version": "2.3.20",
   "description": "Shared code for vue + Firebase apps used by vuefire and vuexfire",
   "author": "Fredrik Bergelin",
   "homepage": "https://github.com/vuejs/vuefire#readme",
@@ -42,5 +42,5 @@
   "devDependencies": {
     "@posva/vuefire-test-helpers": "^1.2.3"
   },
-  "gitHead": "a6ac85c3130c43bab11d1214d40431985e53f62f"
+  "gitHead": "2d7d600ef1e6c2ec8a6ac3d62316136627734a8c"
 }
