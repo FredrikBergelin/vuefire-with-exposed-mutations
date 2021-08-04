@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.11](https://github.com/vuejs/vuefire/compare/@fredrikbergelin/vuefire-core@2.3.9...@fredrikbergelin/vuefire-core@2.3.11) (2021-08-04)
+
+**Note:** Version bump only for package @fredrikbergelin/vuefire-core
+
+
+
+
+
 ## [2.3.9](https://github.com/vuejs/vuefire/compare/@fredrikbergelin/vuefire-core@2.3.7...@fredrikbergelin/vuefire-core@2.3.9) (2021-08-04)
 
 **Note:** Version bump only for package @fredrikbergelin/vuefire-core
