@@ -1,5 +1,5 @@
 {
-  "name": "vuefire",
+  "name": "@fredrikbergelin/vuefire",
   "version": "2.2.5",
   "description": "Firestore bindings for Vue.js",
   "main": "dist/vuefire.common.js",
