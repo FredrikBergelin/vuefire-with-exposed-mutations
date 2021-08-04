@@ -108,13 +108,15 @@ export function firebaseAction<S, R>(
       },
       add: (target, newIndex, data) =>
         commit(VUEXFIRE_ARRAY_ADD, { target, newIndex, data }, commitOptions),
+
+      update: (target, oldIndex, newIndex, data) =>
+        commit(VUEXFIRE_UPDATE, { target, oldIndex, newIndex, data }, commitOptions),
+
       remove: (target, oldIndex) => {
         const data = target[oldIndex]
         commit(VUEXFIRE_ARRAY_REMOVE, { target, oldIndex }, commitOptions)
         return [data]
       },
-      update: (target, oldIndex, newIndex, data) =>
-        commit(VUEXFIRE_UPDATE, { target, oldIndex, newIndex, data }, commitOptions),
     }
 
     return action.call(

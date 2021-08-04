@@ -1,6 +1,6 @@
 {
   "name": "@fredrikbergelin/vuefire",
-  "version": "2.3.7",
+  "version": "2.3.8",
   "description": "Firestore bindings for Vue.js",
   "main": "dist/vuefire.common.js",
   "module": "dist/vuefire.esm.js",

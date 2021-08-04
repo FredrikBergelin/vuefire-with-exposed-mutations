@@ -24,6 +24,10 @@ function getRef(
 const ops: OperationsType = {
   set: (target, key, value) => walkSet(target, key, value),
   add: (array, index, data) => array.splice(index, 0, data),
+  update: (array, oldIndex, newIndex, data) => {
+    array.splice(oldIndex, 1)
+    array.splice(newIndex, 0, data)
+  },
   remove: (array, index) => array.splice(index, 1),
 }
 
