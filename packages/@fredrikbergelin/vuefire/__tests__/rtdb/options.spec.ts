@@ -1,5 +1,5 @@
 import { rtdbPlugin } from '../../src'
-import { Vue, MockFirebase } from '@fredrikbergelin/vuefire-test-helpers'
+import { Vue, MockFirebase } from '@posva/vuefire-test-helpers'
 
 const createLocalVue = () => {
   const newVue = Vue.extend()

@@ -1,5 +1,5 @@
 import { rtdbPlugin } from '../../src'
-import { Vue, tick, MockFirebase } from '@fredrikbergelin/vuefire-test-helpers'
+import { Vue, tick, MockFirebase } from '@posva/vuefire-test-helpers'
 
 Vue.use(rtdbPlugin)
 

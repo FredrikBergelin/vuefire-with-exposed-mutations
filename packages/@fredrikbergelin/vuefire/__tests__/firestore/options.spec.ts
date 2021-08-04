@@ -1,5 +1,5 @@
 import { firestorePlugin } from '../../src'
-import { db, Vue } from '@fredrikbergelin/vuefire-test-helpers'
+import { db, Vue } from '@posva/vuefire-test-helpers'
 
 const createLocalVue = () => {
   const newVue = Vue.extend()

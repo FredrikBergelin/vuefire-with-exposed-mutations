@@ -1,5 +1,5 @@
 import { bindCollection, FirestoreOptions } from '../../src'
-import { db, delay, spyUnbind, delayUpdate, createOps } from '@fredrikbergelin/vuefire-test-helpers'
+import { db, delay, spyUnbind, delayUpdate, createOps } from '@posva/vuefire-test-helpers'
 import { OperationsType } from '../../src/shared'
 import firebase from 'firebase/app'
 

@@ -1,5 +1,5 @@
 import { rtdbBindAsObject } from '../../src/index'
-import { MockFirebase, MockedReference, createOps } from '@fredrikbergelin/vuefire-test-helpers'
+import { MockFirebase, MockedReference, createOps } from '@posva/vuefire-test-helpers'
 import { ResetOption } from '../../src/shared'
 
 function createSnapshotFromPrimitive(value: any, key: string) {

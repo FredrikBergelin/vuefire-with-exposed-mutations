@@ -1,5 +1,5 @@
 import { bindCollection } from '../../src'
-import { db, createOps, spyUnbind } from '@fredrikbergelin/vuefire-test-helpers'
+import { db, createOps, spyUnbind } from '@posva/vuefire-test-helpers'
 import firebase from 'firebase/app'
 import { OperationsType } from '../../src/shared'
 

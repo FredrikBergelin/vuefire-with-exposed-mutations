@@ -1,5 +1,5 @@
 import { rtdbBindAsArray } from '../../src'
-import { MockFirebase, createOps, MockedReference } from '@fredrikbergelin/vuefire-test-helpers'
+import { MockFirebase, createOps, MockedReference } from '@posva/vuefire-test-helpers'
 import { ResetOption } from '../../src/shared'
 
 describe('RTDB collection', () => {

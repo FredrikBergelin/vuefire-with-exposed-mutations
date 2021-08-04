@@ -6,7 +6,7 @@ import {
   spyOnSnapshot,
   spyOnSnapshotCallback,
   createOps,
-} from '@fredrikbergelin/vuefire-test-helpers'
+} from '@posva/vuefire-test-helpers'
 import firebase from 'firebase/app'
 import { OperationsType } from '../../src/shared'
 

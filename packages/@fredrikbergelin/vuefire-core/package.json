@@ -40,7 +40,7 @@
     "url": "https://github.com/vuejs/vuefire/issues"
   },
   "devDependencies": {
-    "@fredrikbergelin/vuefire-test-helpers": "^1.2.3"
+    "@posva/vuefire-test-helpers": "^1.2.3"
   },
   "gitHead": "e3e2df3624572cec86ed861f2472df4d143f2265"
 }

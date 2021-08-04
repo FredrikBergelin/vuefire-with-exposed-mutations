@@ -4,7 +4,7 @@ import {
   VUEXFIRE_ARRAY_ADD,
   VUEXFIRE_ARRAY_REMOVE,
 } from '../src/mutations-types'
-// import { db, tick, Vue } from '@fredrikbergelin/vuefire-test-helpers'
+// import { db, tick, Vue } from '@posva/vuefire-test-helpers'
 
 describe('mutations', () => {
   it('sets a value', () => {

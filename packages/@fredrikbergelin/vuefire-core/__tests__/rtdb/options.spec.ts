@@ -1,5 +1,5 @@
 import { rtdbBindAsObject, rtdbBindAsArray, rtdbOptions } from '../../src'
-import { MockFirebase, createOps, MockedReference } from '@fredrikbergelin/vuefire-test-helpers'
+import { MockFirebase, createOps, MockedReference } from '@posva/vuefire-test-helpers'
 
 describe('RTDB options', () => {
   let collection: MockedReference,

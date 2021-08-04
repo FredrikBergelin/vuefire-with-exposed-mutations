@@ -1,5 +1,5 @@
 import { bindDocument, firestoreOptions, bindCollection } from '../../src'
-import { db, createOps } from '@fredrikbergelin/vuefire-test-helpers'
+import { db, createOps } from '@posva/vuefire-test-helpers'
 import firebase from 'firebase/app'
 
 describe('options', () => {

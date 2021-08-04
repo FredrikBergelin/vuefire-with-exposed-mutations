@@ -7,7 +7,7 @@ import {
   DocumentSnapshot,
   Timestamp,
   CollectionReference,
-} from '@fredrikbergelin/vuefire-test-helpers'
+} from '@posva/vuefire-test-helpers'
 
 describe('Firestore utils', () => {
   let doc: DocumentSnapshot,
